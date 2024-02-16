@@ -6,7 +6,7 @@
 }
 
 .fc-col-header-cell-cushion{
-    text-transform: c;
+    text-transform: uppercase;
 }
 
 h1{
@@ -21,6 +21,14 @@ h1{
 }
 
 .fc-toolbar-title{
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: #003050;
+}
+
+.fc-toolbar-title::first-letter {
+    text-transform: uppercase;
+}
+
+.fc-event-title{
+    background-color: #00a5b6;
 }
