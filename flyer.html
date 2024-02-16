@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- (A) EMPTY CANVAS -->
+    <canvas id="demo"></canvas>
+
+    <script>
+        // (B) IMAGE + TEXT + CANVAS
+        var img = new Image(),
+            txtNombre = "Jorgito",
+            txtSaludoParte1 = "¡Celebra, sonríe y deja que la magia de",
+            txtSaludoParte2 = "este día te envuelva por completo! 🎂🎁",
+            canvas = document.getElementById("demo"),
+            ctx = canvas.getContext("2d");
+        
+        // (C) WRITE TEXT ON IMAGE
+        img.onload = () => {
+            // (C1) SOURCE IMAGE
+            canvas.width = img.naturalWidth;
+            canvas.height = img.naturalHeight;
+            ctx.drawImage(img, 0, 0, img.naturalWidth, img.naturalHeight);
+
+            // (C2) TEXT DIMENSIONS
+            ctx.font = "bold 50px Arial";
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = 5;
+            ctx.fillStyle = "rgb(255, 255, 255)";
+            let td = ctx.measureText(txtNombre),
+                tw = td.width,
+                th = td.actualBoundingBoxAscent + td.actualBoundingBoxDescent;
+            console.log(tw); // text box width
+            console.log(th); // text box height
+
+            // (C3) CALCULATE & WRITE ON CENTER
+            let x = Math.floor((img.naturalWidth - tw) / 2),
+                y = Math.floor((img.naturalHeight - th) / 2);
+            ctx.strokeText(txtNombre, x, y+120);
+            ctx.fillText(txtNombre, x, y+120);
+            
+            // -------------------------------
+            
+            // (C2) TEXT DIMENSIONS
+            ctx.font = "bold 15px Arial";
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = 5;
+            ctx.fillStyle = "rgb(0, 0, 0)";
+            
+            td = ctx.measureText(txtSaludoParte1),
+            tw = td.width,
+            th = td.actualBoundingBoxAscent + td.actualBoundingBoxDescent;
+
+            // (C3) CALCULATE & WRITE ON CENTER
+            x = Math.floor((img.naturalWidth - tw) / 2),
+            y = Math.floor((img.naturalHeight - th) / 2);
+
+            ctx.fillText(txtSaludoParte1, x, y+180);
+
+            td = ctx.measureText(txtSaludoParte2),
+            tw = td.width,
+            th = td.actualBoundingBoxAscent + td.actualBoundingBoxDescent;
+
+            // (C3) CALCULATE & WRITE ON CENTER
+            x = Math.floor((img.naturalWidth - tw) / 2),
+            y = Math.floor((img.naturalHeight - th) / 2);
+
+            ctx.fillText(txtSaludoParte2, x, y+200);
+        };
+
+        // (D) GO!
+        img.src = "demo.png";
+    </script>
+</body>
+
+</html>
