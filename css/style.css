@@ -29,8 +29,14 @@
 .fc-toolbar-title::first-letter {
     text-transform: uppercase;
 }
+/*
+.fc-event-title-container{
+
+}*/
 
 .fc-event-title{
+
+    white-space: normal;
     background-color: #00a5b6;
 }
 
@@ -47,19 +53,19 @@ h1{
 }
 
 .block-content{
-    margin-top: 3rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 .block-copyright{
     font-weight: bold;
     color: #003050;
     text-align: center;
-    margin: 1.5rem;
+    margin: 2rem;
 }
 
-hr{
-    border: 1px solid #003050;
+.text-link{
+    color: #00a5b6;
 }
