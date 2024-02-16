@@ -6,7 +6,7 @@
 :root {
     --fc-border-color: #003050;
     --fc-daygrid-event-dot-width: 5px;
-
+    /*--fc-today-bg-color: #cadd09;*/
     font-family: Verdana;
 }
 
