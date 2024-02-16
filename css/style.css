@@ -29,15 +29,20 @@
 .fc-toolbar-title::first-letter {
     text-transform: uppercase;
 }
-/*
-.fc-event-title-container{
 
-}*/
+.fc-event-title-container{
+    margin: 0.5rem;
+}
+
+.fc-event-main-frame{
+    background-color: #00a5b6;
+    
+}
 
 .fc-event-title{
-
-    white-space: normal;
     background-color: #00a5b6;
+    white-space: normal;
+    
 }
 
 .block-header{
