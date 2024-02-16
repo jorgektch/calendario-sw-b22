@@ -1,6 +1,9 @@
 //import esLocale from '@fullcalendar/core/locales/es';
 
+const btn = document.getElementsByClassName('fc-today-button');
+
 document.addEventListener('DOMContentLoaded', function() {
+
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
@@ -588,6 +591,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
            ]
     });
+
+    btn.textContent = 'XDDDDD';
+
     calendar.setOption('locale', 'es');
     calendar.render();
 });
+

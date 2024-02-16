@@ -6,10 +6,11 @@
 }
 
 .fc-col-header-cell-cushion{
-    text-transform: uppercase;
+    text-transform: c;
 }
 
 h1{
+    text-transform: uppercase;
     text-align: center;
     color: #003050;
 }
@@ -20,6 +21,6 @@ h1{
 }
 
 .fc-toolbar-title{
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: #003050;
 }
