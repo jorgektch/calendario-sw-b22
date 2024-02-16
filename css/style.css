@@ -1,6 +1,24 @@
 :root {
-    --fc-border-color: black;
+    --fc-border-color: #003050;
     --fc-daygrid-event-dot-width: 5px;
 
-    --fc-font-family: Arial;
+    font-family: Verdana;
+}
+
+.fc-col-header-cell-cushion{
+    text-transform: uppercase;
+}
+
+h1{
+    text-align: center;
+    color: #003050;
+}
+
+.fc-col-header-cell{
+    background-color: #003050;
+    color: white;
+}
+
+.fc-toolbar-title{
+    text-transform: capitalize;
 }
