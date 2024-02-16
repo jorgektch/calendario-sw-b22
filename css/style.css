@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     --fc-border-color: #003050;
     --fc-daygrid-event-dot-width: 5px;
@@ -9,11 +14,7 @@
     text-transform: uppercase;
 }
 
-h1{
-    text-transform: uppercase;
-    text-align: center;
-    color: #003050;
-}
+
 
 .fc-col-header-cell{
     background-color: #003050;
@@ -31,4 +32,34 @@ h1{
 
 .fc-event-title{
     background-color: #00a5b6;
+}
+
+.block-header{
+    background-color: #003050;
+}
+
+h1{
+    padding: 2%;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.block-content{
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.block-copyright{
+    font-weight: bold;
+    color: #003050;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+hr{
+    background-color:red;
 }
