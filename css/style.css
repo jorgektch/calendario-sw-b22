@@ -14,8 +14,6 @@
     text-transform: uppercase;
 }
 
-
-
 .fc-col-header-cell{
     background-color: #003050;
     color: white;
@@ -34,15 +32,12 @@
     margin: 0.5rem;
 }
 
-.fc-event-main-frame{
+.fc-event-main{
     background-color: #00a5b6;
-    
 }
 
-.fc-event-title{
-    background-color: #00a5b6;
+.fc-event-title{ /* Varias líneas */
     white-space: normal;
-    
 }
 
 .block-header{
